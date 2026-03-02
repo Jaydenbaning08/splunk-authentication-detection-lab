@@ -56,6 +56,6 @@ Skills Demonstrated:
 
 - Threshold-Based Detection
 
-= Log Correlation
+- Log Correlation
 
-= Security Monitoring
+- Security Monitoring
