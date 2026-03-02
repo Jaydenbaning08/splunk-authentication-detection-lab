@@ -17,16 +17,25 @@ Environment:
 Detection Queries:
 
 1. Identify Failed Logins
+ ```spl
 index=evtxlab (EventCode=4625 OR EventID=4625) | table _time Account_Name Logon_Type Source_Network_Address Failure_Reason | sort - _time
+```
+
 
 2. Count Failed Logins by User and IP
+```spl
 index=evtxlab (EventCode=4625 OR EventID=4625) | stats count by Account_Name Source_Network_Address | sort - count
+```
 
 3. Threshold-Based Brute Force Detection
+```spl
 index=evtxlab (EventCode=4625 OR EventID=4625) | bin _time span=5m | stats count as fails by Account_Name Source_Network_Address _time | where fails >= 3 | sort - fails
+```
 
 4. Failed Login Timeline (Monitoring View)
+```spl
 index=evtxlab (EventCode=4625 OR EventID=4625) | timechart span=5m count as failed_logins
+```
 
 Findings:
 
