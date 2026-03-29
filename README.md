@@ -42,8 +42,7 @@ index=evtxlab (EventCode=4625 OR EventID=4625) | timechart span=5m count as fail
 ![Failed Logins by User](screenshots/03_failed_logins_by_user.png)
 
 5. Failed Logins Timechart
-```spl
-![Failed Logins Timechart](https://raw.githubusercontent.com/Jaydenbaning08/splunk-authentication-detection-lab/main/screenshots/05_failed_logins_timechart.png) 
+![Failed Logins Timechart](screenshots/05_failed_logins_timechart.png) 
 
 Findings:
 
