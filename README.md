@@ -43,7 +43,7 @@ index=evtxlab (EventCode=4625 OR EventID=4625) | timechart span=5m count as fail
 
 5. Failed Logins Timechart
 ```spl
-![Failed Logins Timechart](screenshots/05_failed_logins_timechart.png.png)
+![Failed Logins Timechart](screenshots/05_failed_logins_timechart.png)
 
 Findings:
 
