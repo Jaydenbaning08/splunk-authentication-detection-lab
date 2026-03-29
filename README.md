@@ -1,4 +1,4 @@
-Splunk Windows Authentication Detection Lab:
+Splunk Windows Authentication Detection Lab: 
 
 Project Overview:
 
